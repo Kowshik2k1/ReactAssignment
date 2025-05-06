@@ -1,24 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import FunctionalComponent from './components/FunctionalComponent';
+import GreetingComponent from './components/GreetingComponent';
+import ItemList from './components/ItemList';
+import LoginComponent from './components/LoginComponent';
+import StyledComponent from './components/StyledComponent';
+import {InlineCss} from './components/StyledComponent';
 
 function App() {
+  const fruits = ["Apple", "Bananna", "Pappaya", "Oranges"];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <FunctionalComponent/>
+      <GreetingComponent name="John" />
+      <StyledComponent />
+      <InlineCss />
+      <ItemList fruits={fruits} />
+      <LoginComponent isLoggedIn={false} /><br />
+      <LoginComponent isLoggedIn={true} />
+    </>
   );
 }
 
