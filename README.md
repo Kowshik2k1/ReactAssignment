@@ -5,6 +5,6 @@ Create a Greeting component that takes a name prop and displays a personalized g
 ### Question - 3
 Create a StyledComponent that renders a div with an inline style applied. Set the background color to "lightblue" and the text color to "white".
 ### Question - 4
-Create a functional component ItemList that accepts an array of items via props and displays each item as a list (<ul> with <li> tags). Use this component in the App component.
+Create a functional component ItemList that accepts an array of items via props and displays each item as a list (&lt;ul&gt; with &lt;li&gt; tags). Use this component in the App component.
 ### Question - 5
 Create a LoginButton component that displays a different message depending on whether a user is logged in or not (boolean isLoggedIn prop). If isLoggedIn is true, display "Logout", otherwise display "Login".
